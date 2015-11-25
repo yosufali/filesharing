@@ -31,6 +31,13 @@
 			}
 		}
 	}
+
+	// get the selected expiration time from the dropdown (select) and store it
+	if (isset($_POST['time'])) {
+		$selectOption = $_POST['time'];
+		print_r($selectOption);
+	}
+	
 ?>
 
 <form action="" method="POST" enctype="multipart/form-data">
@@ -40,14 +47,15 @@
 		<p/>
 		
 		<label>Set timer </label>
-		<select>
-			<option value = "5 minutes"> 5 minutes </option>
-			<option value = "1hour"> 1 hour </option>
-			<option value = "6hours"> 6 hours </option>
-			<option value = "24hours"> 24 hours </option>
-			<option value = "1week"> 1 week </option>
-			<option value = "2weeks"> 2 weeks </option>
-			<option value = "1 month"> 1 month </option>
+		<select name="time" required>
+			<option value = ""> Select expiration </option>
+			<option value = "5m"> 5 minutes </option>
+			<option value = "1h"> 1 hour </option>
+			<option value = "6h"> 6 hours </option>
+			<option value = "24h"> 24 hours </option>
+			<option value = "1w"> 1 week </option>
+			<option value = "2w"> 2 weeks </option>
+			<option value = "1m"> 1 month </option>
 		</select>
 		
 		<p/>
