@@ -37,7 +37,6 @@
 		$selectOption = $_POST['time'];
 		print_r($selectOption);
 	}
-	
 ?>
 
 <form action="" method="POST" enctype="multipart/form-data">
