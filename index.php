@@ -37,6 +37,11 @@
 		$selectOption = $_POST['time'];
 		print_r($selectOption);
 	}
+
+	if (isset($_POST['password'])) {
+		$password = $_POST['password'];
+		print_r($password);
+	}
 ?>
 
 <form action="" method="POST" enctype="multipart/form-data">
@@ -60,7 +65,7 @@
 		<p/>
 		
 		<label>Choose Password (optional)</label>
-		<input type="" name="password">
+		<input type="" name="password" placeholder="Password">
 		
 		<p/>
 		
