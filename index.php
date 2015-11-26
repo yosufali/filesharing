@@ -1,8 +1,8 @@
 <?php
-	include 'main.php';
+	include 'file.php';
 ?>
 
-<form action="" method="POST" enctype="multipart/form-data">
+<form action="process.php" method="POST" enctype="multipart/form-data">
 	<p>
 		<input type="file" name="item"> <!-- Browse -->
 
